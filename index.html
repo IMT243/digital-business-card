@@ -7,18 +7,41 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
         }
-        .container {
-            display: none;
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 350px;
+        }
+        .card .top-section {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .card .top-section img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .card .bottom-section {
             padding: 20px;
         }
         .separator {
             border: none;
             border-top: 1px solid #ccc;
-            margin: 10px 0; /* Reduced by half */
+            margin: 10px 0;
         }
         .social-links, .sharing-buttons {
             list-style: none;
@@ -27,13 +50,9 @@
             justify-content: center;
             gap: 10px;
         }
-        .social-links a, .sharing-buttons a {
-            text-decoration: none;
-            color: #000;
-        }
         .social-links img, .sharing-buttons img {
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
         }
         .button {
             display: inline-block;
@@ -47,67 +66,44 @@
             vertical-align: middle;
             margin-right: 10px;
         }
-        .loader {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f3f3f3;
-        }
-        .loader img {
-            width: 150px; /* Larger size */
-            animation: pulse 3s infinite; /* Changed to pulse animation */
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            25% { transform: scale(1.1); }
-            50% { transform: scale(1); }
-            75% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%; /* Make image round */
-            object-fit: cover; /* Ensure the image covers the entire area */
-        }
     </style>
 </head>
 <body>
-    <div class="loader">
-        <img src="logo.png" alt="Loading...">
-    </div>
-    <div class="container">
-        <img src="profile.png" alt="Profile Picture" class="profile-pic">
-        <h1>Ibrahim Tahir</h1>
-        <p>
-            <img src="phone.png" alt="Phone" style="width: 25px;"> Mobile: 
-            <a href="tel:+971553355590">+971553355590</a>
-        </p>
-        <hr class="separator">
-        <p>
-            <img src="briefcase.png" alt="Occupation" style="width: 25px;"> Occupation: 
-            <a href="https://nyuad.nyu.edu/en/academics/graduate/global-phd-student-fellowship-in-chemistry.html">Graduate Student</a>
-        </p>
-        <hr class="separator">
-        <p>
-            <img src="institute.png" alt="Institution" style="width: 25px;"> Institution: 
-            <a href="https://www.nyu.edu">NYU</a> & 
-            <a href="https://nyuad.nyu.edu/en/">NYU Abu Dhabi</a>
-        </p>
-        <hr class="separator">
-        <ul class="social-links">
-            <li><a href="https://www.linkedin.com/in/ibrahim-tahir/"><img src="linkedin.png" alt="LinkedIn"></a></li>
-            <li><a href="https://scholar.google.ae/citations?hl=en&user=4L9QaTkAAAAJ"><img src="gscholar.png" alt="Google Scholar"></a></li>
-            <li><a href="https://tinyurl.com/Ibrahim-Tahir"><img src="website.png" alt="Website"></a></li>
-        </ul>
-        <ul class="sharing-buttons">
-            <li><a href="#"><img src="share.png" alt="Share"></a></li>
-        </ul>
-        <hr class="separator">
-        <a class="button" href="https://drive.google.com/uc?export=download&id=1tk__xBJdL0VX9HILwHpyEF8bSHEskt-q">
-            <img src="contact.png" alt="vCard" style="width: 20px;"> Download vCard
-        </a>
+    <div class="card">
+        <div class="top-section">
+            <img src="profile.png" alt="Profile Picture">
+            <h1>Ibrahim Tahir</h1>
+        </div>
+        <div class="bottom-section">
+            <p>
+                <img src="phone.png" alt="Phone" style="width: 25px;"> Mobile: 
+                <a href="tel:+971553355590">+971553355590</a>
+            </p>
+            <hr class="separator">
+            <p>
+                <img src="briefcase.png" alt="Occupation" style="width: 25px;"> Occupation: 
+                <a href="https://nyuad.nyu.edu/en/academics/graduate/global-phd-student-fellowship-in-chemistry.html">Graduate Student</a>
+            </p>
+            <hr class="separator">
+            <p>
+                <img src="institute.png" alt="Institution" style="width: 25px;"> Institution: 
+                <a href="https://www.nyu.edu">NYU</a> & 
+                <a href="https://nyuad.nyu.edu/en/">NYU Abu Dhabi</a>
+            </p>
+            <hr class="separator">
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/ibrahim-tahir/"><img src="linkedin.png" alt="LinkedIn"></a></li>
+                <li><a href="https://scholar.google.ae/citations?hl=en&user=4L9QaTkAAAAJ"><img src="gscholar.png" alt="Google Scholar"></a></li>
+                <li><a href="https://tinyurl.com/Ibrahim-Tahir"><img src="website.png" alt="Website"></a></li>
+            </ul>
+            <ul class="sharing-buttons">
+                <li><a href="#"><img src="share.png" alt="Share"></a></li>
+            </ul>
+            <hr class="separator">
+            <a class="button" href="https://drive.google.com/uc?export=download&id=1tk__xBJdL0VX9HILwHpyEF8bSHEskt-q">
+                <img src="contact.png" alt="vCard" style="width: 20px;"> Download vCard
+            </a>
+        </div>
     </div>
 
     <script>
