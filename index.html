@@ -31,6 +31,10 @@
             text-decoration: none;
             color: #000;
         }
+        .social-links img, .sharing-buttons img {
+            width: 40px;
+            height: 40px;
+        }
         .button {
             display: inline-block;
             padding: 10px 20px;
@@ -56,8 +60,10 @@
         }
         @keyframes pulse {
             0% { transform: scale(1); }
-            100% { transform: scale(1.1); }
-            250% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
         }
         .profile-pic {
             width: 150px;
@@ -91,12 +97,12 @@
         </p>
         <hr class="separator">
         <ul class="social-links">
-            <li><a href="https://www.linkedin.com/in/ibrahim-tahir/">LinkedIn</a></li>
-            <li><a href="https://scholar.google.ae/citations?hl=en&user=4L9QaTkAAAAJ">Google Scholar</a></li>
-            <li><a href="https://tinyurl.com/Ibrahim-Tahir">Website</a></li>
+            <li><a href="https://www.linkedin.com/in/ibrahim-tahir/"><img src="linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://scholar.google.ae/citations?hl=en&user=4L9QaTkAAAAJ"><img src="gscholar.png" alt="Google Scholar"></a></li>
+            <li><a href="https://tinyurl.com/Ibrahim-Tahir"><img src="website.png" alt="Website"></a></li>
         </ul>
         <ul class="sharing-buttons">
-            <li><a href="#">Share</a></li>
+            <li><a href="#"><img src="share.png" alt="Share"></a></li>
         </ul>
         <hr class="separator">
         <a class="button" href="https://drive.google.com/uc?export=download&id=1tk__xBJdL0VX9HILwHpyEF8bSHEskt-q">
@@ -109,7 +115,7 @@
             setTimeout(function() {
                 document.querySelector('.loader').style.display = 'none';
                 document.querySelector('.container').style.display = 'block';
-            }, 2000); // Delay of 2 seconds
+            }, 3000); // Delay of 3 seconds
         };
     </script>
 </body>
