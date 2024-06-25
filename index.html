@@ -1,118 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app" itemscope itemtype="http://qrco.de/bfB5eN?trackSharing=1">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibrahim Tahir</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f3f3f3;
-        }
-        .card {
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            width: 350px;
-        }
-        .card .top-section {
-            background-color: #007bff;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .card .top-section img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 10px;
-        }
-        .card .bottom-section {
-            padding: 20px;
-        }
-        .separator {
-            border: none;
-            border-top: 1px solid #ccc;
-            margin: 10px 0;
-        }
-        .social-links, .sharing-buttons {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
-        .social-links img, .sharing-buttons img {
-            width: 30px;
-            height: 30px;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .button img {
-            vertical-align: middle;
-            margin-right: 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="card">
-        <div class="top-section">
-            <img src="profile.png" alt="Profile Picture">
-            <h1>Ibrahim Tahir</h1>
-        </div>
-        <div class="bottom-section">
-            <p>
-                <img src="phone.png" alt="Phone" style="width: 25px;"> Mobile: 
-                <a href="tel:+971553355590">+971553355590</a>
-            </p>
-            <hr class="separator">
-            <p>
-                <img src="briefcase.png" alt="Occupation" style="width: 25px;"> Occupation: 
-                <a href="https://nyuad.nyu.edu/en/academics/graduate/global-phd-student-fellowship-in-chemistry.html">Graduate Student</a>
-            </p>
-            <hr class="separator">
-            <p>
-                <img src="institute.png" alt="Institution" style="width: 25px;"> Institution: 
-                <a href="https://www.nyu.edu">NYU</a> & 
-                <a href="https://nyuad.nyu.edu/en/">NYU Abu Dhabi</a>
-            </p>
-            <hr class="separator">
-            <ul class="social-links">
-                <li><a href="https://www.linkedin.com/in/ibrahim-tahir/"><img src="linkedin.png" alt="LinkedIn"></a></li>
-                <li><a href="https://scholar.google.ae/citations?hl=en&user=4L9QaTkAAAAJ"><img src="gscholar.png" alt="Google Scholar"></a></li>
-                <li><a href="https://tinyurl.com/Ibrahim-Tahir"><img src="website.png" alt="Website"></a></li>
-            </ul>
-            <ul class="sharing-buttons">
-                <li><a href="#"><img src="share.png" alt="Share"></a></li>
-            </ul>
-            <hr class="separator">
-            <a class="button" href="https://drive.google.com/uc?export=download&id=1tk__xBJdL0VX9HILwHpyEF8bSHEskt-q">
-                <img src="contact.png" alt="vCard" style="width: 20px;"> Download vCard
-            </a>
-        </div>
-    </div>
-
-    <script>
-        window.onload = function() {
-            setTimeout(function() {
-                document.querySelector('.loader').style.display = 'none';
-                document.querySelector('.container').style.display = 'block';
-            }, 3000); // Delay of 3 seconds
-        };
+    <link rel="stylesheet" type="text/css" href="css/build/pages/dvcard/template_normal.min.css" />
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        YII_CSRF_TOKEN='8c05c846bef1eb21f9bcc93d58b1d83345c4acab';
+        /*]]>*/
     </script>
+    <title>Contact Page</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account35766732/46971121_1.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account35766732/46971121_1.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account35766732/46971121_1.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account35766732/46971121_1.png">
+
+    <!-- Facebook meta -->
+    <meta property="og:url" content="http://qrco.de/bfB5eN?trackSharing=1"/>
+    <meta property="og:title" content="Ibrahim Tahir"/>
+    <meta property="og:description" content="Graduate Student"/>
+    <meta property="og:image" content="https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account35766732/46971121_1.png"/>
+    <meta property="og:image:width" content="200"/>
+    <meta property="og:image:height" content="200"/>
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="http://qrco.de/bfB5eN?trackSharing=1">
+    <meta name="twitter:title" content="Ibrahim Tahir">
+    <meta name="twitter:description" content="Graduate Student">
+    <meta name="twitter:image" content="https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account35766732/46971121_1.png">
+    <meta name="twitter:image:width" content="200">
+    <meta name="twitter:image:height" content="200">
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Ibrahim Tahir">
+    <meta itemprop="description" content="Graduate Student">
+    <meta itemprop="image" content="https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account35766732/46971121_1.png">
+</head>
+<body id="dvcard-body" ng-controller="ComplexController" class="{{isColorLight(view.color1) ? 'darkTheme' : 'whiteTheme'}}">
+
+<!-- Your body content goes here -->
+
+<script type="text/javascript" src="js/build/angular.rendering.min.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+    // Your JavaScript code here
+/*]]>*/
+</script>
 </body>
 </html>
