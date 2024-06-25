@@ -58,6 +58,12 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Make image round */
+            object-fit: cover; /* Ensure the image covers the entire area */
+        }
     </style>
 </head>
 <body>
@@ -65,7 +71,7 @@
         <img src="logo.png" alt="Loading...">
     </div>
     <div class="container">
-        <img src="profile.png" alt="Profile Picture" style="width: 150px;">
+        <img src="profile.png" alt="Profile Picture" class="profile-pic">
         <h1>Ibrahim Tahir</h1>
         <p>
             <img src="phone.png" alt="Phone" style="width: 25px;"> Mobile: 
