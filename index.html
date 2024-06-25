@@ -51,8 +51,8 @@
             background-color: #f3f3f3;
         }
         .loader img {
-            width: 100px;
-            animation: spin 5s linear infinite;
+            width: 150px; /* Larger size */
+            animation: spin 3s linear infinite; /* Animation duration increased */
         }
         @keyframes spin {
             0% { transform: rotate(0deg); }
@@ -99,8 +99,10 @@
 
     <script>
         window.onload = function() {
-            document.querySelector('.loader').style.display = 'none';
-            document.querySelector('.container').style.display = 'block';
+            setTimeout(function() {
+                document.querySelector('.loader').style.display = 'none';
+                document.querySelector('.container').style.display = 'block';
+            }, 3000); // Delay of 3 seconds
         };
     </script>
 </body>
